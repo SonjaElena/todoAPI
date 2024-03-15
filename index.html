@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>todo-app</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-do List </h2>
+
+            <div class="filter">
+                <div class="checkbox-label">
+                    <input checked type="radio" id="all" name="filterType">
+                    <label for="allCheckbox">All</label>
+                </div>
+                <div class="checkbox-label">
+                    <input type="radio" id="open" name="filterType">
+                    <label for="openCheckbox">Open</label>
+                </div>
+                <div class="checkbox-label">
+                    <input type="radio" id="done" name="filterType">
+                    <label for="doneCheckbox">Done</label>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <input type="text" id="input-box" placeholder="To do">
+                <button id="addTask">Add</button>
+                <button id="removeTask">Remove done</button>
+            </div>
+            <ul id="list-container"></ul>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

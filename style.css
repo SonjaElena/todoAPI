@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #090239, rgb(241, 43, 3));
+  padding: 10px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+label {
+  margin-left: 7px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.todo-app h2 {
+  color: black;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+input,
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  color: rgb(60, 66, 87);
+  box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+    rgb(0 0 0 / 12%) 0px 1px 1px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px,
+    rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+    rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 8px;
+  display: inline-block;
+  min-height: 28px;
+}
+
+button {
+  background-color: rgb(226, 224, 227);
+}
+
+#addTask {
+  margin-left: 2rem;
+}
+
+ul {
+  margin-top: 1rem;
+}
+
+ul li {
+  list-style: circle;
+  font-size: 17px;
+  user-select: none;
+  position: relative;
+  cursor: pointer;
+  list-style-position: inside;
+}
+
+input[type="checkbox"] {
+  /* appearance: none;
+      -webkit-appearance: none; */
+  margin-right: 7px;
+  transform: translateY(0.4em);
+}
+
+input[type="checkbox"]:checked {
+  background-color: grey;
+  border-color: grey;
+}
+
+.checked {
+  color: grey;
+  text-decoration: line-through;
+}
